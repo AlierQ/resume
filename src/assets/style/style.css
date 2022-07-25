@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  margin: 20px 0;
+  color: #333;
+  font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: rgb(37, 70, 101);
+  margin-bottom: 10px;
+}
+
+a {
+  color: rgb(37, 70, 101);
+  text-decoration: none;
+  border-bottom: 2px solid rgb(4, 170, 109);
+}
+
+strong {
+  color: rgb(4, 170, 109)
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+}
+
+h3, h4, h5, h6 {
+  margin: 0
+}
+
+article {
+  width: 21cm;
+  min-height: 29.7cm;
+  background: white;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1em;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.point-icon > svg {
+  width: 10px;
+  height: 10px;
+  color: #254665;
+}
+
+.content-icon > svg {
+  width: 28px;
+  height: 28px;
+  color: #254665;
+}
+
+.top-icon > svg {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+
+/* bio start */
+.bio {
+  background: rgb(37, 70, 101);
+  overflow: hidden;
+  color: white;
+  position: relative;
+  padding: 0 20px 10px 20px;
+  border-bottom: 5px solid rgb(4, 170, 109);
+}
+
+.bio > .img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  border: 3px solid #eee;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.bio > .img > img {
+  margin-top: -10px;
+  width: 100%;
+}
+
+/* bio end */
+
+/* education start */
+
+.education {
+  padding-left: 10px;
+}
+
+.education > p {
+  color: #666666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.education > p > span {
+  line-height: 16px;
+}
+
+/* education end */
+
+/* projects start */
+
+.projects {
+  padding-left: 10px;
+}
+
+.projects > ol {
+  list-style: none;
+  padding: 0;
+}
+
+.projects > ol > li {
+  margin-bottom: 16px;
+}
+
+.projects > ol > li > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects > ol > li > header > h3 {
+  display: inline-block;
+}
+
+.projects > ol > li > p {
+  color: #666;
+}
+
+/* projects end */
+
+/* openSource start */
+
+.openSource {
+  padding-left: 10px;
+}
+
+.openSource > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.openSource > ul > li {
+  margin-bottom: 16px;
+}
+
+.openSource > ul > li > p {
+  color: #666;
+}
+
+.openSource > ul > li > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* openSource end */
+
+/* skills start */
+
+.skills {
+  padding-left: 10px;
+}
+
+.skills > .wrapper {
+  display: flex;
+}
+
+.skills > .wrapper > #skills-echarts {
+  width: 420px;
+  height: 240px;
+}
+
+.skills > .wrapper > ul {
+  padding-left: 10px;
+}
+
+.skills > .wrapper > ul > li {
+  padding: 5px 0;
+}
+
+.skills > .wrapper > ul > li {
+  color: #666;
+}
+
+/* skills end */
+
+/* jobs start */
+
+.jobs {
+  padding-left: 10px;
+}
+
+.jobs > ol {
+  padding: 0;
+}
+
+.jobs > ol > li > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs > ol > li > header > div {
+  display: flex;
+}
+
+.jobs > ol > li > header > div > h3 {
+  margin-right: 18px;
+}
+
+.jobs > ol > li > header span {
+  color: #666;
+  font-size: 18px;
+}
+
+.jobs > ol > li > ul {
+  color: #666666;
+  padding: 10px 0;
+}
+
+.jobs > ol > li > ul > li {
+  padding: 2px 0;
+}
+
+/* jobs end */
+
+/* others start */
+
+.others {
+  padding-left: 10px;
+  color: #333333;
+}
+
+.others > ul {
+  padding: 0;
+}
+
+.others > ul > li > p {
+  color: #666666;
+}
+
+.others > ul > li > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* others end */
+
+@media (max-width: 500px) {
+
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  article {
+    width: auto;
+  }
+
+  /* bio start */
+  .bio {
+    padding: 0 10px 10px 10px;
+  }
+
+  .bio > .img {
+    display: none;
+  }
+
+  .bio > p:nth-of-type(1) {
+    font-size: 14px;
+  }
+
+  .bio > p:nth-of-type(2) {
+    font-size: 13px;
+    vertical-align: middle;
+  }
+
+  /* bio end */
+  /* education start */
+  .education > p {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .education > p > span {
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  .education > p > span:nth-of-type(1),
+  .education > p > span:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+
+  .education > p > span:nth-of-type(2),
+  .education > p > span:nth-of-type(4) {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  /* education end */
+  /* skills start */
+  .skills > .wrapper {
+    display: block;
+  }
+
+  .skills > .wrapper > #skills-echarts {
+    width: 100%;
+  }
+
+  /* skills end */
+  /* jobs start */
+  .jobs > ol > li > header > div > span {
+    padding-top: 8px;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .jobs > ol > li > header > span {
+    padding-top: 4px;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .jobs > ol > li > header > div {
+    display: block;
+  }
+
+  /* jobs end */
+}
